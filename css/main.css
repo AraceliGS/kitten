@@ -1,1 +1,102 @@
+* Reset */
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+  background-image: url('../assets/img/dawn.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+  /* Grid */
+
+  .container {
+    margin: 0 auto;
+    max-width: 1920px;
+    width: 100%;
+    padding-top: 28%;
+  }
+
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Imágenes */
+
+  figure {
+  text-align: center;
+}
+
+/* Para móviles*/
+
+.view-desktop {
+  display: none;
+}
+
+.view-tablet {
+  display: none;
+}
+
+.view-mobile {
+  display: inline-block;
+}
+
+/* Para tablets */
+
+@media (min-width: 768px) {
+  body {
+    background-image: url('../assets/img/night.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .container {
+    padding-top: 28%;
+  }
+
+  .view-desktop {
+    display: none;
+  }
+
+  .view-tablet {
+    display: inline-block;
+  }
+
+  .view-mobile {
+    display: none;
+  }
+}
+
+/* Para laptops y desktops */
+
+@media (min-width: 992px) {
+  body {
+    background-image: url('../assets/img/sunny-day.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .container {
+    padding-top: 28%;
+  }
+
+  .view-desktop {
+    display: inline-block;
+    width: 29%;
+    margin-left: 9%;
+  }
+
+  .view-tablet {
+    display: none;
+  }
+
+  .view-mobile {
+    display: none;
+  }
+}
