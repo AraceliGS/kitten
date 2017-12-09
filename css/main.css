@@ -20,7 +20,7 @@ body {
     margin: 0 auto;
     max-width: 1920px;
     width: 100%;
-    padding-top: 13%;
+    padding-top: 21.4%;
   }
 
   .row::after {
@@ -47,6 +47,7 @@ body {
 
 .view-mobile {
   display: inline-block;
+  width: 76%;
 }
 
 /* Para tablets */
