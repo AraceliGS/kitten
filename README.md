@@ -2,7 +2,7 @@
 
 ![Gato Principal](assets/img/image.jpg)
 
-## **0bjetivo**
+## **Objetivo**
 
 El objetivo de este reto es crear una página web donde se muestre un paisaje y un gatito diferente a medida que la ventana del navegador se haga más pequeña.
 
