@@ -83,6 +83,10 @@ body {
     background-image: url('../assets/img/sunny-day.jpg');
   }
 
+  .container {
+    padding-top: 22%;
+  }
+  
   figure {
     padding-left: 6%;
     padding-top: 1%;
