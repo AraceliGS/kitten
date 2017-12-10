@@ -1,4 +1,4 @@
-* Reset */
+/* Reset */
 
 * {
     box-sizing: border-box;
@@ -8,9 +8,9 @@
 
 body {
   background-image: url('../assets/img/dawn.png');
+  background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
 }
 
@@ -20,7 +20,6 @@ body {
     margin: 0 auto;
     max-width: 1920px;
     width: 100%;
-    padding-top: 21.4%;
   }
 
   .row::after {
@@ -33,6 +32,8 @@ body {
 
   figure {
   text-align: center;
+  padding-top: 28.4%;
+  padding-right: 1%;
 }
 
 /* Para móviles*/
@@ -47,7 +48,7 @@ body {
 
 .view-mobile {
   display: inline-block;
-  width: 76%;
+  width: 67%;
 }
 
 /* Para tablets */
@@ -57,8 +58,8 @@ body {
     background-image: url('../assets/img/night.jpg');
   }
 
-  .container {
-    padding-top: 67.5%;
+  figure {
+    padding-top: 41%;
   }
 
   .view-desktop {
@@ -82,14 +83,14 @@ body {
     background-image: url('../assets/img/sunny-day.jpg');
   }
 
-  .container {
-    padding-top: 25%;
+  figure {
+    padding-left: 6%;
+    padding-top: 1%;
   }
 
   .view-desktop {
     display: inline-block;
-    width: 29%;
-    margin-left: 9%;
+    width: 35%;
   }
 
   .view-tablet {
