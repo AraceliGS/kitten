@@ -57,7 +57,7 @@ body {
     background-repeat: inherit;
     background-size: inherit;
     background-attachment: fixed;
-    background-position: center center;
+    background-position: bottom;
   }
 
   figure {
