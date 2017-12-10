@@ -8,10 +8,8 @@
 
 body {
   background-image: url('../assets/img/dawn.png');
-  background-attachment: fixed;
-  background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 
   /* Grid */
@@ -32,8 +30,6 @@ body {
 
   figure {
   text-align: center;
-  padding-top: 28.4%;
-  padding-right: 1%;
 }
 
 /* Para móviles*/
@@ -48,7 +44,9 @@ body {
 
 .view-mobile {
   display: inline-block;
-  width: 67%;
+  width: 68%;
+  padding-top: 28%;
+  padding-right: 1%;
 }
 
 /* Para tablets */
@@ -56,10 +54,15 @@ body {
 @media (min-width: 768px) {
   body {
     background-image: url('../assets/img/night.jpg');
+    background-repeat: inherit;
+    background-size: inherit;
+    background-attachment: fixed;
+    background-position: center center;
   }
 
   figure {
-    padding-top: 41%;
+    padding-top: 31.5%;
+    padding-right: 0;
   }
 
   .view-desktop {
@@ -74,6 +77,7 @@ body {
   .view-mobile {
     display: none;
   }
+
 }
 
 /* Para laptops y desktops */
@@ -81,20 +85,58 @@ body {
 @media (min-width: 992px) {
   body {
     background-image: url('../assets/img/sunny-day.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
   }
 
   .container {
-    padding-top: 22%;
+    padding-top: 62%;
   }
-  
+
   figure {
-    padding-left: 6%;
-    padding-top: 1%;
+    padding-top: 0;
+    padding-right: 0;
+    padding-left: 7%;
   }
 
   .view-desktop {
     display: inline-block;
-    width: 35%;
+    width: 80%;
+  }
+
+  .view-tablet {
+    display: none;
+  }
+
+  .view-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    background-image: url('../assets/img/sunny-day.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+  }
+
+  .container {
+    padding-top: 23%;
+  }
+
+  figure {
+    padding-top: 1%;
+    padding-right: 0;
+    padding-left: 8%;
+  }
+
+  .view-desktop {
+    display: inline-block;
+    width: 33%;
   }
 
   .view-tablet {
