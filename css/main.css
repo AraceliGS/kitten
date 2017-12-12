@@ -6,144 +6,32 @@
     padding: 0;
   }
 
-body {
-  background-image: url('../assets/img/dawn.png');
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-
-  /* Grid */
-
-  .container {
-    margin: 0 auto;
-    max-width: 1920px;
+  body {
+    background-image: url('../assets/img/dawn.png');
+    background-size: auto 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100vh;
+  }
+  
+  img {
     width: 100%;
+    height: auto;
   }
 
-  .row::after {
-    content: "";
-    display: table;
-    clear: both;
+  @media (min-width: 768px) {
+    body {
+      background-image: url('../assets/img/night.jpg');
+    }
   }
 
-  /* Imágenes */
-
-  figure {
-  text-align: center;
-}
-
-/* Para móviles*/
-
-.view-desktop {
-  display: none;
-}
-
-.view-tablet {
-  display: none;
-}
-
-.view-mobile {
-  display: inline-block;
-  width: 68%;
-  padding-top: 28%;
-  padding-right: 1%;
-}
-
-/* Para tablets */
-
-@media (min-width: 768px) {
-  body {
-    background-image: url('../assets/img/night.jpg');
-    background-repeat: inherit;
-    background-size: inherit;
-    background-attachment: fixed;
-    background-position: bottom;
+  @media (min-width: 992px) {
+    body {
+      background-image: url('../assets/img/sunny-day.jpg');
+      background-size: auto;
+    }
   }
 
-  figure {
-    padding-top: 31.5%;
-    padding-right: 0;
-  }
-
-  .view-desktop {
-    display: none;
-  }
-
-  .view-tablet {
-    display: inline-block;
-    width: 80%;
-  }
-
-  .view-mobile {
-    display: none;
-  }
-
-}
-
-/* Para laptops y desktops */
-
-@media (min-width: 992px) {
-  body {
-    background-image: url('../assets/img/sunny-day.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
-  }
-
-  .container {
-    padding-top: 62%;
-  }
-
-  figure {
-    padding-top: 0;
-    padding-right: 0;
-    padding-left: 7%;
-  }
-
-  .view-desktop {
-    display: inline-block;
-    width: 80%;
-  }
-
-  .view-tablet {
-    display: none;
-  }
-
-  .view-mobile {
-    display: none;
-  }
-}
-
-@media (min-width: 1200px) {
-  body {
-    background-image: url('../assets/img/sunny-day.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
-  }
-
-  .container {
-    padding-top: 23%;
-  }
-
-  figure {
-    padding-top: 1%;
-    padding-right: 0;
-    padding-left: 8%;
-  }
-
-  .view-desktop {
-    display: inline-block;
-    width: 33%;
-  }
-
-  .view-tablet {
-    display: none;
-  }
-
-  .view-mobile {
-    display: none;
-  }
-}
